@@ -215,7 +215,7 @@ main img {
 }
 
 *, ::after, ::before {
-    box-sizing: initial;
+    box-sizing: border-box;
 }
 
 .btn:hover {
@@ -373,70 +373,83 @@ main img {
 
 /** Aca va login pa no confundirse pa**/
 
-.Container-Login {
+.container-Login {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
 }
 
-.Email {
-    display: block;
-}
-
-.Container-form {
+.container-form {
     display: flex;
     flex-direction: column;
 }
 
-.Left {
+.container-form h1 {
     margin-left: 7rem;
-    padding-top: 5rem;
+    padding-top: 2rem;
     font-family: Varela Round, sans-serif ;
     font-size: xx-large;
 }
 
-.Leftwo {
+.container-form a {
+    display: inline;
+    color: black;
+    text-decoration: underline;
+}
+
+.leftwo {
     margin-left: 3rem;
     padding: 1rem 0rem 10rem 4rem;
     width: 30rem;
 }
 
-.Input {
-    height: 2.5rem;
+.label {
+    margin-left: 5px;
+}
+
+.input {
+    height: 3rem;
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 17px;
+    border: 2px solid rgba(0, 0, 0, .12);
+    width: 30rem;
 }
 
 .inicio-Sesion {
+    justify-items: center;
     height: 2.5rem;
     color: #fd611a;
     font-size: 16px;
     font-family: Roboto, sans-serif;
     border-color: rgba(0, 0, 0, .12);
     background-color: white;
+    border-radius: 20px;
+    width: 30rem;
 }
 
-.Inlinee {
-    display: inline !important;
-    text-align: center !important;
-}
-
-.Container-form a {
-    display: inline;
-    color: black;
-    text-decoration: underline;
+.inlinee {
+    text-align: center;
 }
 
 /* Aca va register */
 
-.Container-Register {
+.container-Register {
     display: flex;
     flex-flow: column wrap;
 }
 
-.Container-Form {
+.container-Form {
     display: flex;
     flex-flow: column wrap;
+}
+
+.container-Register h1{
+    margin-left: 7rem;
+    padding-top: 2rem;
+    font-family: Varela Round, sans-serif ;
+    font-size: xx-large;
 }
 
 .Label {
@@ -449,27 +462,16 @@ main img {
     width: 30rem;
 }
 
-.Leftwo {
-    margin-left: 3rem;
-    padding: 1rem 0rem 10rem 4rem;
-    width: 30rem;
-}
-
-.Crear-Cuenta {
-    height: 2.5rem;
-}
-
-.Flex {
+.flex {
     display: flex;
     flex-direction: column;
 }
 
-.Inlinee {
-    display: inline !important;
+.inlinee {
     text-align: center !important;
 }
 
-.Container-Form a {
+.container-Form a {
     display: inline;
     color: black;
     text-decoration: underline;
