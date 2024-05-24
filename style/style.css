@@ -1,3 +1,4 @@
+
 .varela-round-regular {
     font-family: "Varela Round", sans-serif;
     font-weight: 400;
@@ -385,7 +386,12 @@ main img {
     flex-direction: column;
 }
 
-.container-form h1 {
+.container-form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-Login h1 {
     margin-left: 7rem;
     padding-top: 2rem;
     font-family: Varela Round, sans-serif ;
@@ -398,10 +404,13 @@ main img {
     text-decoration: underline;
 }
 
+.container-form a:hover {
+    color: #DF5616;
+}
+
 .leftwo {
     margin-left: 3rem;
     padding: 1rem 0rem 10rem 4rem;
-    width: 30rem;
 }
 
 .label {
@@ -440,20 +449,11 @@ main img {
     flex-flow: column wrap;
 }
 
-.container-Form {
-    display: flex;
-    flex-flow: column wrap;
-}
-
 .container-Register h1{
     margin-left: 7rem;
     padding-top: 2rem;
     font-family: Varela Round, sans-serif ;
     font-size: xx-large;
-}
-
-.Label {
-    display: block;
 }
 
 .Input {
@@ -462,24 +462,7 @@ main img {
     width: 30rem;
 }
 
-.flex {
-    display: flex;
-    flex-direction: column;
-}
-
-.inlinee {
-    text-align: center !important;
-}
-
-.container-Form a {
-    display: inline;
-    color: black;
-    text-decoration: underline;
-}
-
 /** Aca va preguntas frecuentes **/
-
-
 
 .margin {
     margin: 2rem 0rem 3rem 5rem;
