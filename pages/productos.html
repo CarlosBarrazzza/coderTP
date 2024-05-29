@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darwin´s</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="stylesheet" href="../style/style.css">
     <div>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +20,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,700&family=Viga&display=swap" rel="stylesheet">
+    </div>
+    <div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
     </div>
     <div>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,29 +66,73 @@
                 </div>
             </div>
         </nav>
-        <main class="Container-Productos">
-            <section class="Color">
-                <div class="Separador-Privilegiado"> Categorias </div>
-                <br>
-                <div class="Separador"> Buzos </div>
-                <div class="Separador"> Remeras </div>
-                <div class="Separador"> Camisas </div>
-                <div class="Separador"> Camperas </div>
-                <div class="Separador"> Pantalones </div>
-                <div class="Separador"> Shorts </div>
-                <div class="Separador"> Accesorios </div>
-            </section>
-            <br>
-            <section class="Color">
-                <div class="Separador-Privilegiado"> Filtros </div>
-                <br>
-                <div class="Separador"> Colores </div>
-                <div class="Separador"> Talle </div>
-                <div class="Separador"> Género </div>
-                <div class="Separador"> Material </div>
-                <div class="Separador"> Fit </div>
-                <div class="Separador"> Precio </div>
-            </section>
+        <main>
+            <h1 class="productosh1">PRODUCTOS</h1>
+            <div class="productos">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item margin2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Remeras
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> <a href="#"> Mangas cortas </a> </div>
+                            <div class="accordion-body"> <a href="#"> Mangas Largas </a> </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item margin2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Pantalones
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> <a href="#"> Jeans </a> </div>
+                            <div class="accordion-body"> <a href="#"> Bermudas </a> </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item margin2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Camperas
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> <a href="#"> Parcas </a> </div>
+                            <div class="accordion-body"> <a href="#"> Puffers </a> </div>
+                        </div>
+                    </div>
+                </div>
+                <article class="productos-venta">
+                    <div>
+                        <div class="separacion-productos">
+                            <img src="../assets/casaca belgranito.jpg" alt="imagen de una remera de un equipo de futbol">
+                            <div class="separacion-items">
+                                <h2> Casaca de belgrano</h2>
+                                <h3> $130.000 </h3>
+                                <button type="button" class="btn btn-outline-primary">COMPRAR</button>
+                            </div>
+                        </div>
+                        <div class="separacion-productos">
+                            <img src="../assets/casaca de instituto.png" alt="imagen de una remera de un equipo de futbol"> 
+                            <div class="separacion-items">
+                                <h2> Casaca de instituto</h2>
+                                <h3> $140.000 </h3>
+                                <button type="button" class="btn btn-outline-primary">COMPRAR</button>
+                            </div>
+                        </div>
+                        <div class="separacion-productos"> 
+                            <img src="../assets/casaca de talleres.png" alt="imagen de una remera de un equipo de futbol">
+                            <div class="separacion-items">
+                                <h2> Casaca de talleres</h2>
+                                <h3> $110.000 </h3>
+                                <button type="button" class="btn btn-outline-primary">COMPRAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </main>
         <footer class="footer">
             <p class="copyright">Copyright 2024 ©</p>
@@ -95,6 +144,7 @@
                 </ul>
             </nav>
         </footer>
+        <script src="../js/bootstrap.min.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </div>

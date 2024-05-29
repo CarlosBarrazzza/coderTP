@@ -158,7 +158,6 @@ ion-icon {
 .navbar-nav {
     display: contents;
     --bs-nav-link-hover-color: white;
-    margin: 0x 10px;
 }
 
 .product {
@@ -182,6 +181,13 @@ ion-icon {
 .new-In {
     text-align: center;
     margin: 4rem 0rem 1.5rem 0rem;
+    font-family:Fira code, sans-serif;
+    font-weight: 550;
+}
+
+.new-In:hover {
+    color: #FD611A;
+    transition: color .30s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
 
 main img {
@@ -311,6 +317,10 @@ main img {
 
     .busqueda {
         margin: 1.5rem 0rem 1.5rem 0rem;
+    }
+
+    .dividor {
+        display: block;
     }
 
     .position {
@@ -499,6 +509,8 @@ Main h1 {
 .atencionAlCliente h1:hover {
     color: #FD611A;
     text-decoration: underline;
+    transition: color .45s ease-in-out, background-color .20s ease-in-out, border-color .30s ease-in-out;
+
 }
 
 .iconos {
@@ -517,29 +529,69 @@ Main h1 {
 
 .iconos div {
     display: flex;
+    align-items: center;
 }
 
 /** Productos **/
 
-.Container-Productos {
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.productosh1 {
+    margin: 25px 0px 25px 0px;
+    text-align: center;
+    font-family:Fira code, sans serif;
+    font-weight: 550;
+}
+
+.productosh1:hover {
+    color: #FD611A;
+    transition: color .30s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.productos-venta {
+    margin-bottom: 1em;
+    width: 30rem;
+}
+
+.separacion-productos {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.separacion-items {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 5rem;
-    margin-left: 5rem;
-    margin-bottom: 1rem;
+    justify-content: space-around;
 }
 
-.Color {
-    background-color: #FFFFFF; 
-    width: 17rem;
+.separacion-productos h2 {
+    margin: 0;
 }
 
-.Separador {
-    margin: 25px 0px 30px 20px;
+.margin2 {
+    width: 33rem;
 }
 
-.Separador-Privilegiado {
-    margin: 25px 0px 5px 20px;
+.margin2 a {
+    color: #222;
+    text-decoration: none;
 }
 
+.margin2 a:hover {
+    color: #FD611A;
+    transition: color .30s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.acordeon {
+    display: block;
+}
