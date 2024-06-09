@@ -1,0 +1,117 @@
+main {
+  background: no-repeat url(../assets/backgroun-official.svg);
+  margin: 0px 15px;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main .productosh1 {
+  margin: 25px 0px 25px 0px;
+  text-align: center;
+  font-family: Fira code, sans serif;
+  font-weight: 550;
+}
+main .productos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "accordion productos-venta productos-venta productos-venta productos-venta";
+}
+main .productos .accordion {
+  grid-area: accordion;
+  margin-left: 2rem;
+}
+main .productos .accordion .margin2 {
+  width: 23rem;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+main .productos .accordion .margin2 .accordion-body a {
+  text-decoration: none;
+  color: black;
+}
+main .productos .accordion .margin2 .accordion-body a:hover {
+  color: #FD611A;
+  transition: color 0.3s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+main .productos .accordion .margin2 .accordion-flex {
+  width: 0;
+  padding: 0;
+  --bs-accordion-btn-icon:var(--bs-accordion-btn-icon);
+}
+main .productos .accordion .margin2 .accordion-flex a {
+  margin: 1.03rem 0rem 1.03rem 1.25rem;
+  text-decoration: none;
+  color: black;
+}
+main .productos .accordion .margin2 .accordion-flex a:hover {
+  color: #FD611A;
+  transition: color 0.3s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+main .productos .productos-venta {
+  grid-area: productos-venta;
+  margin-right: 2rem;
+}
+main .productos .productos-venta .baul {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 8px;
+}
+main .productos .productos-venta .baul .separacion-productos {
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  margin: 0px 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+main .productos .productos-venta .baul .separacion-productos img {
+  width: 150px;
+  height: 158px;
+  margin-left: 0;
+  align-items: center;
+  justify-items: center;
+  border-radius: 15px;
+}
+main .productos .productos-venta .baul .separacion-productos .separacion-items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.productosh1:hover {
+  color: #FD611A;
+  transition: color 0.3s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+:root, [data-bs-theme=light] {
+  --bs-border-width: 0px;
+}
+
+.btn-outline-primary {
+  font-family: Raleway, sans-serif;
+  font-size: 17px;
+  color: black;
+  border: 2px solid;
+  border-color: rgba(252, 97, 25, 0.38);
+  --bs-btn-hover-border-color: rgba(0, 0, 0, .12);
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  --bs-btn-active-bg: #DF5616;
+  --bs-btn-active-border-color: black;
+  --bs-btn-active-color: white;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #fd611a;
+}
+
+.btn-outline-primary:active {
+  border: 1px solid;
+}
+
+/*# sourceMappingURL=style.css.map */

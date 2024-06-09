@@ -6,6 +6,7 @@
     <title>Darwin´s</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <div>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,49 +70,73 @@
         <main>
             <h1 class="productosh1">PRODUCTOS</h1>
             <div class="productos">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion accordion-flush accordion2" id="accordionFlushExample">
                     <div class="accordion-item margin2">
                         <h2 class="accordion-header">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Remeras
+                                Filtros
                             </button>
                         </h2>
                         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body"> <a href="#"> Mangas cortas </a> </div>
-                            <div class="accordion-body"> <a href="#"> Mangas Largas </a> </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item margin2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Pantalones
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body"> <a href="#"> Jeans </a> </div>
-                            <div class="accordion-body"> <a href="#"> Bermudas </a> </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item margin2">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Camperas
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body"> <a href="#"> Parcas </a> </div>
-                            <div class="accordion-body"> <a href="#"> Puffers </a> </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Remeras
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <a href="#">Mangas cortas</a>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <a href="#">Mangas Largas</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-flex accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <a href="#"> Camperas </a>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Buzos
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>¿Cómo gestiono el envío de mi pedido?</strong> Actualmente realizamos envíos a todo el país través de Oca. Para calcular el costo del envío, se toman en consideración tanto las dimensiones y peso del paquete como la distancia de la localidad de entrega.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Pantalones
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>¿Cómo gestiono el envío de mi pedido?</strong> Actualmente realizamos envíos a todo el país través de Oca. Para calcular el costo del envío, se toman en consideración tanto las dimensiones y peso del paquete como la distancia de la localidad de entrega.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <article class="productos-venta">
-                    <div>
+                    <div class="baul">
                         <div class="separacion-productos">
                             <img src="../assets/casaca belgranito.jpg" alt="imagen de una remera de un equipo de futbol">
                             <div class="separacion-items">
                                 <h2> Casaca de belgrano</h2>
                                 <h3> $130.000 </h3>
-                                <button type="button" class="btn btn-outline-primary">COMPRAR</button>
+                                <button type="button" class="btn btn-outline-primary">SUMAR AL CARRITO</button>
                             </div>
                         </div>
                         <div class="separacion-productos">
@@ -119,15 +144,41 @@
                             <div class="separacion-items">
                                 <h2> Casaca de instituto</h2>
                                 <h3> $140.000 </h3>
-                                <button type="button" class="btn btn-outline-primary">COMPRAR</button>
+                                <button type="button" class="btn btn-outline-primary">SUMAR AL CARRITO</button>
                             </div>
                         </div>
                         <div class="separacion-productos"> 
-                            <img src="../assets/casaca de talleres.png" alt="imagen de una remera de un equipo de futbol">
+                            <img src="../assets/casaquita de talleres.png" alt="imagen de una remera de un equipo de futbol">
                             <div class="separacion-items">
                                 <h2> Casaca de talleres</h2>
                                 <h3> $110.000 </h3>
-                                <button type="button" class="btn btn-outline-primary">COMPRAR</button>
+                                <button type="button" class="btn btn-outline-primary">SUMAR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="baul">
+                        <div class="separacion-productos">
+                            <img src="../assets/casaca belgranito.jpg" alt="imagen de una remera de un equipo de futbol">
+                            <div class="separacion-items">
+                                <h2> Casaca de belgrano</h2>
+                                <h3> $130.000 </h3>
+                                <button type="button" class="btn btn-outline-primary">SUMAR AL CARRITO</button>
+                            </div>
+                        </div>
+                        <div class="separacion-productos">
+                            <img src="../assets/casaca de instituto.png" alt="imagen de una remera de un equipo de futbol"> 
+                            <div class="separacion-items">
+                                <h2> Casaca de instituto</h2>
+                                <h3> $140.000 </h3>
+                                <button type="button" class="btn btn-outline-primary">SUMAR AL CARRITO</button>
+                            </div>
+                        </div>
+                        <div class="separacion-productos"> 
+                            <img src="../assets/casaquita de talleres.png" alt="imagen de una remera de un equipo de futbol">
+                            <div class="separacion-items">
+                                <h2> Casaca de talleres</h2>
+                                <h3> $110.000 </h3>
+                                <button type="button" class="btn btn-outline-primary">SUMAR AL CARRITO</button>
                             </div>
                         </div>
                     </div>
