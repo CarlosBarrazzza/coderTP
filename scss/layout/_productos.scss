@@ -1,0 +1,153 @@
+
+main {
+    background: no-repeat url(../assets/backgroun-official.svg);
+    margin: 0px 15px;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    .productosh1 {
+        margin: 25px 0px 25px 0px;
+        text-align: center;
+        font-family:Fira code, sans serif;
+        font-weight: 550;
+    }
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(1,1fr);
+        grid-template-areas: 
+        "accordion productos-venta productos-venta productos-venta productos-venta"
+        ;
+        .accordion {
+            grid-area: accordion;
+            margin-left: 2rem;
+            .margin2 {
+                width: 23rem;
+                box-shadow: $shadowproductos;
+                .accordion-button {
+                    position: initial !important;
+                }
+                .accordion-body a {
+                    text-decoration: none;
+                    color: black;
+                }
+                .accordion-body a:hover {
+                    color: #FD611A;
+                    transition: $transicionfiltros;
+                }
+                .accordion-flex {
+                    width: 0 ;
+                    padding: 0;
+                    --bs-accordion-btn-icon:var(--bs-accordion-btn-icon);
+                    a {
+                        margin: 1.03rem 0rem 1.03rem 1.25rem;
+                        text-decoration: none;
+                        color: black;
+                    }
+                    a:hover {
+                        color: #FD611A;
+                        transition: $transicionfiltros;
+                    }
+                }
+            }
+        }
+        .productos-venta {
+            grid-area: productos-venta;
+            margin-right: 2rem;
+            .baul {
+                display: flex;
+                flex-direction: row;
+                margin: 0px 8px;
+                .separacion-productos {
+                    box-shadow: $shadowproductos;
+                    margin: 0px 10px;
+                    padding: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    background-color: white;
+                    border-radius: 4px;
+                    margin-bottom: 20px;
+                    img {
+                        width: 150px;
+                        height: 158px;
+                        margin-left: 0;
+                        align-items: center;
+                        justify-items: center;
+                        border-radius: 15px;
+                    }
+                    .separacion-items {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.productosh1:hover {
+    color: #FD611A;
+    transition: $transicionfiltros;
+}
+
+:root, [data-bs-theme=light]{
+    --bs-border-width: 0px;
+}
+
+.btn-outline-primary {
+    font-family: Raleway, sans-serif;
+    font-size: 17px;
+    color: black;
+    border: 2px solid;
+    border-color:  rgba(252, 97, 25, .38);
+    --bs-btn-hover-border-color: rgba(0, 0, 0, .12);
+    box-shadow: $shadowproductos;
+    --bs-btn-active-bg: #DF5616;
+    --bs-btn-active-border-color: black;
+    --bs-btn-active-color: white;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #fd611a;
+}
+
+.btn-outline-primary:active {
+    border:1px solid;
+}
+
+@media(max-width:575px) {
+    main {
+        background-image: url(../assets/background-mobile.svg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        .accordion {
+            box-shadow: $shadowproductos;
+            margin-left: 0px !important;
+        }
+        .productos {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: center;
+            .productos-venta {
+                margin-top: 50px;
+                margin-right: 0px !important;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                .baul {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    width: 22rem;
+                }
+            }
+        }
+    }
+}

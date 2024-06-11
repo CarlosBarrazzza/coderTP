@@ -25,6 +25,9 @@ main .productos .accordion .margin2 {
   width: 23rem;
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
+main .productos .accordion .margin2 .accordion-button {
+  position: initial !important;
+}
 main .productos .accordion .margin2 .accordion-body a {
   text-decoration: none;
   color: black;
@@ -112,6 +115,38 @@ main .productos .productos-venta .baul .separacion-productos .separacion-items {
 
 .btn-outline-primary:active {
   border: 1px solid;
+}
+
+@media (max-width: 575px) {
+  main {
+    background-image: url(../assets/background-mobile.svg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  main .accordion {
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    margin-left: 0px !important;
+  }
+  main .productos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  main .productos .productos-venta {
+    margin-top: 50px;
+    margin-right: 0px !important;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  main .productos .productos-venta .baul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 22rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
