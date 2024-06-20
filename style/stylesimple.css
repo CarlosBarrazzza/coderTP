@@ -98,11 +98,13 @@ footer {
 .position {
     position: sticky;
     top: -3rem;
+    z-index: 10;
 }
 
 .position1 {
     position: sticky;
     top: 4rem;
+    z-index: 10;
 }
 
 .contenedor img {
@@ -196,6 +198,7 @@ ion-icon {
 .new-In:hover {
     color: #FD611A;
     transition: color .30s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    cursor: default;
 }
 
 main img {
@@ -218,6 +221,33 @@ main img {
     background-color: #FFFFFF;
     width: 15rem;
     padding: 10px;
+}
+
+.contenedor-imagen {
+    position: relative;
+    width: 150px;
+    height: 158px;
+}
+
+.imagen, .imagen-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.imagen-hover {
+    opacity: 0;
+}
+
+.contenedor-imagen:hover .imagen {
+    opacity: 0;
+}
+
+.contenedor-imagen:hover .imagen-hover {
+    opacity: 1;
 }
 
 .ns h2 {
@@ -313,78 +343,6 @@ main img {
 
 .copyright {
     font-family: "Viga", sans-serif;
-}
-
-@media(max-width:575px) {
-    main {
-        background: no-repeat url(../assets/background-mobile.svg);
-        background-position: center center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    .contenedor {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-    }
-
-    .busqueda {
-        margin: 1.5rem 0rem 1.5rem 0rem;
-    }
-
-    .dividor {
-        display: block;
-    }
-
-    .position {
-        position: sticky;
-        top: -6.8rem;
-    }
-
-    .position1 {
-        position: sticky;
-        top: 11rem;
-    }
-
-    .product {
-        margin: 10px 18px 10px 18px;
-        padding: 10px 0px 10px 0px;
-    }
-
-    .ns {
-        margin: 1.5rem 0rem;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-
-    .copyright {
-        display: flex;
-        font-size: 10px;
-        font-weight: 100;
-    }
-    
-    .navegacion {
-        display: flex;
-        font-size: small;
-    }
-    
-    /* aca va preguntasfrecuentes */
-    .margin {
-        margin: 0rem 0rem 3rem 3rem;
-        width: 80% !important;
-        background-color: #FFFFFF ;
-        color: black;
-    }
-
-    /* aca va login*/
-
-    
 }
 
 /** Aca va login pa no confundirse pa**/
@@ -538,6 +496,10 @@ Main h1 {
     align-items: center;
 }
 
+.iconos h2 {
+    color: black;
+}
+
 .iconos ion-icon {
     width: 50px;
     height: 80px;
@@ -548,4 +510,111 @@ Main h1 {
 .iconos div {
     display: flex;
     align-items: center;
+}
+
+@media(max-width:575px) {
+    main {
+        background: no-repeat url(../assets/background-mobile.svg);
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+    }
+
+    .busqueda {
+        margin: 1.5rem 0rem 1.5rem 0rem;
+    }
+
+    .dividor {
+        display: block;
+    }
+
+    .position {
+        position: sticky;
+        top: -6.8rem;
+    }
+
+    .position1 {
+        position: sticky;
+        top: 11rem;
+    }
+
+    .product {
+        margin: 10px 18px 10px 18px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .ns {
+        margin: 1.5rem 0rem;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .copyright {
+        display: flex;
+        font-size: 10px;
+        font-weight: 100;
+    }
+    
+    .navegacion {
+        display: flex;
+        font-size: small;
+    }
+    
+    /* aca va preguntas frecuentes */
+    .margin {
+        margin: 0rem 0rem 3rem 3rem;
+        width: 80% !important;
+        background-color: #FFFFFF ;
+        color: black;
+    }
+
+    /* aca va login*/
+    .container-Login {
+        align-content: center;
+    }
+
+    .container-Login h1 {
+        margin-left: 0.5rem;
+        align-items: flex-start;
+    }
+    .leftwo {
+        margin-left: 0rem ;
+        padding: 0px 0px 50px 0px;
+        align-items: center;
+    }
+
+    .leftwo div {
+        align-items: center;
+    }
+
+    .input {
+        width: 24rem;
+    }
+
+    .inicio-Sesion {
+        width: 80%;
+    }
+    /* aca va contacto */
+
+    .atencionAlCliente a h1 {
+        font-size: 1.4rem;
+        margin-left: 0px;
+    }
+
+    .iconos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
