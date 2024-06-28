@@ -16,6 +16,10 @@ main {
         text-align: center;
         font-family:Fira code, sans serif;
         font-weight: 550;
+        &:hover {
+            color: #FD611A;
+            transition: $transicionfiltros;
+        }
     }
     .productos {
         display: grid;
@@ -36,10 +40,10 @@ main {
                 .accordion-body a {
                     text-decoration: none;
                     color: black;
-                }
-                .accordion-body a:hover {
-                    color: #FD611A;
-                    transition: $transicionfiltros;
+                    &:hover {
+                        color: #FD611A;
+                        transition: $transicionfiltros;
+                    }
                 }
                 .accordion-flex {
                     width: 0 ;
@@ -49,10 +53,10 @@ main {
                         margin: 1.03rem 0rem 1.03rem 1.25rem;
                         text-decoration: none;
                         color: black;
-                    }
-                    a:hover {
-                        color: #FD611A;
-                        transition: $transicionfiltros;
+                        &:hover {
+                            color: #FD611A;
+                            transition: $transicionfiltros;
+                        }
                     }
                 }
             }
@@ -111,11 +115,6 @@ main {
     }
 }
 
-.productosh1:hover {
-    color: #FD611A;
-    transition: $transicionfiltros;
-}
-
 :root, [data-bs-theme=light]{
     --bs-border-width: 0px;
 }
@@ -131,15 +130,16 @@ main {
     --bs-btn-active-bg: #DF5616;
     --bs-btn-active-border-color: black;
     --bs-btn-active-color: white;
+    &:active {
+        border:1px solid;
+    }
 }
 
-.btn:hover {
-    color: white;
-    background-color: #fd611a;
-}
-
-.btn-outline-primary:active {
-    border:1px solid;
+.btn{
+    &:hover {
+        color: white;
+        background-color: #fd611a;
+    }
 }
 
 @media(max-width:575px) {

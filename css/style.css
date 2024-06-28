@@ -18,6 +18,10 @@ main .productosh1 {
   font-family: Fira code, sans serif;
   font-weight: 550;
 }
+main .productosh1:hover {
+  color: #FD611A;
+  transition: color 0.3s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
 main .productos {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -109,11 +113,6 @@ main .productos .productos-venta .baul .separacion-productos .separacion-items b
   height: 50px;
 }
 
-.productosh1:hover {
-  color: #FD611A;
-  transition: color 0.3s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
-}
-
 :root, [data-bs-theme=light] {
   --bs-border-width: 0px;
 }
@@ -130,14 +129,13 @@ main .productos .productos-venta .baul .separacion-productos .separacion-items b
   --bs-btn-active-border-color: black;
   --bs-btn-active-color: white;
 }
+.btn-outline-primary:active {
+  border: 1px solid;
+}
 
 .btn:hover {
   color: white;
   background-color: #fd611a;
-}
-
-.btn-outline-primary:active {
-  border: 1px solid;
 }
 
 @media (max-width: 575px) {

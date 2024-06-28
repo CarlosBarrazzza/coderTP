@@ -486,7 +486,6 @@ Main h1 {
     color: #FD611A;
     text-decoration: underline;
     transition: color .45s ease-in-out, background-color .20s ease-in-out, border-color .30s ease-in-out;
-
 }
 
 .iconos {
@@ -496,8 +495,17 @@ Main h1 {
     align-items: center;
 }
 
-.iconos h2 {
+.iconos a {
     color: black;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.iconos a:hover {
+    color: #FD611A;
+    text-decoration: underline;
+    transition: color .45s ease-in-out, background-color .20s ease-in-out, border-color .30s ease-in-out;
 }
 
 .iconos ion-icon {
