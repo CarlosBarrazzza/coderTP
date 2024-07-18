@@ -1,0 +1,15 @@
+.container-Register {
+    display: flex;
+    flex-flow: column wrap;
+    h1 {
+        margin-left: 7rem;
+        padding-top: 2rem;
+        font-family: 'Varela Round', sans-serif;
+        font-size: xx-large;
+    }
+    .input {
+        height: 2.5rem;
+        margin-top: 0.5rem;
+        width: 30rem;
+    }
+}

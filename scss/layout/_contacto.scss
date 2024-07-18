@@ -1,0 +1,42 @@
+.atencionAlCliente {
+    text-align: center;
+    margin: 25rem 0px !important;
+    color: #FEFEF0;
+    a {
+        text-decoration: underline black;
+    }
+    h1 {
+        &:hover {
+            color: #FD611A;
+            text-decoration: underline;
+            transition: color .45s ease-in-out, background-color .20s ease-in-out, border-color .30s ease-in-out;
+        }
+    }
+    .iconos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        a {
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            &:hover {
+                color: #FD611A;
+                text-decoration: underline;
+                transition: color .45s ease-in-out, background-color .20s ease-in-out, border-color .30s ease-in-out;
+            }
+        }
+        div {
+            display: flex;
+            align-items: center;
+            ion-icon {
+                width: 50px;
+                height: 80px;
+                color: #222;
+                margin: 0 0.1rem 1rem 1.5rem;
+            }
+        }
+    }
+}
